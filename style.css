@@ -1,0 +1,107 @@
+bodyy {
+    scroll-behavior: smooth;
+}
+
+.header {
+    margin-top: 75px;
+    text-align: center;
+    height: 200px;
+}
+
+.helptitle {
+    font-family: 'Century Gothic';
+    font-size: 50px;
+    font-weight: bold;
+    color: #00117b;
+}
+
+.ttb {
+    margin-left: 500px;
+}
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    float: left;
+    padding: 10px;
+    color: white;
+    background-color: #00117b;
+    margin-left: .8px;
+    align-self: center;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff5531;
+}
+
+.lbl-toggle:hover {
+    opacity: 0.9;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.wrap-collapsible {
+    border: 1px;
+    border-color: black;
+}
+
+.faq {
+    align-content: center;
+    margin-top: 100px;
+}
+
+.lbl-toggle {
+    text-align: initial;
+    width: 1165px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.0rem;
+    padding: 2rem;
+    color: black;
+    background: white;
+    transition: background-color .2s;
+}
+
+.lbl-toggle:hover {
+    color: white;
+    background-color: #ff5531;
+}
+
+.lbl-toggle-h {
+    text-align: initial;
+    width: 1200px;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: 1.0rem;
+    padding: 1rem;
+    color: black;
+    background: #e7e7e7;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.collapsible-content .content-inner {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: initial;
+    width: 1185px;
+    background-color: #ff5531;
+    padding: 1rem 1.4rem;
+    color: white;
+    box-shadow: 1px 1px 1px 0px grey;
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+    max-height: 100vh;
+}
